@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.landing-container {
+    height: 100vh; // ta sekcja ma być widoczna zawsze na całość wysokośći ekranu.
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .landing-text {
+        background: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, .7) 50%);
+        background-size: 202% 100%;
+        background-position:left;
+        color: black;
+        position: relative; // umożliwia użycie właściwości 'left'
+        left: -100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        transition: 0.7s ease;
+
+
+        h1 {
+            font-size: calc(12px + (50 - 12) * ((100vw - 280px) / (1100 - 280)));
+            letter-spacing: calc(2px + (7 - 2) * ((100vw - 280px) / (1100 - 280)));
+            font-weight: 500;
+            transition: 1s ease;
+        }
+        
+        h2 {
+            font-size: calc(10px + (30 - 10) * ((100vw - 280px) / (1100 - 280)));
+            letter-spacing: calc(2px + (4 - 2) * ((100vw - 280px) / (1100 - 280)));
+            font-weight: 500;
+            transition: 1s ease;
+        }
+
+        #landing-btn {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: calc(10px + (15 - 10) * ((100vw - 280px) / (1100 - 280)));
+            background: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, transparent 50%);
+            background-size: 200% 104%;
+            background-position:right;
+            padding: 1em;
+            border: 1px solid black;
+            color: black;
+            transition: 0.5s ease;
+            border-radius: 3px;
+        }
+
+        #landing-btn:hover {
+            transform: scale(1.1);
+            background-position: left;
+            border: 1px solid white;
+            color: white;
+        }
+
+        #landing-btn:active {
+            outline: none;
+            transform: scale(0.9);
+        }
+    }
+
+    .header-hover:hover {
+        background-position: right;
+        h1, h2 {
+            color: white;
+        }
+    }
+}

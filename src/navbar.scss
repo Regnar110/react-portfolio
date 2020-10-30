@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ropa+Sans:ital@0;1&display=swap'); // menu items font
 
 .navbar-container {
+    position: fixed; // przy tym musimy zdefioniować width
+    width: 100%;
     font-family: 'Righteous', cursive;
     height: 60px;
     background-color: rgba(248, 248, 248, 0.8);
@@ -59,10 +61,13 @@
 }
 
 .menu-content {
+    position: fixed; // fixed ponieważ cały navbar jest fixed. Fixed umożliwia także użycie top i right. Musiałem zrezygnować z float ponieważ nie działa one w stosunku do elementów FIXED
+    z-index: 1; // żeby w razie wysunięcia było nad wszystkimi elementami strony.
+    top: 60px;
+    right: 0px;
     background-color:  rgba(248, 248, 248, 0.8);
     border-bottom-left-radius: 5%;
-    float: right;
-    overflow: hidden; // gdy width jest na 0 to elementy wewnątrz tego pojemnika nie wystają
+    overflow: hidden; // zapobiega wystawaniu elementów wewnątrz pojemnika gdy width jest na 0px
     width: 0px;
     height: 300px;
     display: flex;
