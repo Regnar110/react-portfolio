@@ -10,6 +10,7 @@
     -webkit-box-shadow: 2px 14px 48px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 14px 48px 5px rgba(0,0,0,0.75);
     box-shadow: 2px 14px 48px 5px rgba(0,0,0,0.75);
+    z-index: 1; //pasek nawigacyjny zawsze jest ponad wszystkimi elementami
 
     display: flex;
     justify-content: space-between;
@@ -29,6 +30,7 @@
             width: 70px;
         }
         #image-text {
+            text-align: center;
             padding: 3px;
         }
     }

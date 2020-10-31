@@ -1,13 +1,20 @@
 import React, {Component, Fragment} from 'react';
+import AboutSection from './AboutSection';
 import './App.scss';
 import LandingSection from './LandingSection.js';
 import NavBar from './NavBar'
+import {techObject} from './tech-object.js';
+import TechSection from './TechSection.js'
+import ProjectsSection from './ProjectsSection.js'; // tu będą zwracane projectCard komponent
+import {projects} from './projects'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      menuStatus: false
+      menuStatus: false,
+      technologies: techObject,
+      projects: projects
     }
   }
   
@@ -33,6 +40,9 @@ class App extends Component {
       <Fragment>
         <NavBar menuToggle={this.menuOnOff}/>
         <LandingSection />
+        <AboutSection />
+        <TechSection techs={this.state.technologies}/>
+        <ProjectsSection />
       </Fragment>
     )
   }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); // header
+.tech-section-container {
+    background: url('./technologiesBackground.jpg') fixed center center no-repeat;
+    background-size: cover;
+    .section-header {
+        display: flex;
+        justify-content: center;
+
+        .header {
+            padding-left: 20px;
+            padding-right: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.6);
+            background-color: rgba(107, 107, 107, 0.7);
+            font-family: 'Russo One', sans-serif;
+            font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+            color: rgb(0, 0, 0);
+            -webkit-box-shadow: -14px 18px 35px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -14px 18px 35px 0px rgba(0,0,0,0.75);
+            box-shadow: -14px 18px 35px 0px rgba(0,0,0,0.75);   
+        }
+    }
+    .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

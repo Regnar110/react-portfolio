@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap'); //text
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); // header
+
+.about-container {
+    text-align: center; //centruje header. NIe centruje reszty bo są to elementy flexbox
+    background: rgb(96,179,140);
+    background: linear-gradient(202.5deg, rgba(96,179,140,1) 50%,  rgb(173, 173, 173) 50.5%);
+    padding: 30px;
+
+    .section-header {
+        display: flex;
+        justify-content: center;
+
+        .header {
+            padding-left: 20px;
+            padding-right: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.6);
+            background-color: rgba(39, 38, 38, 0.3);
+            font-family: 'Russo One', sans-serif;
+            font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+            color: rgb(0, 0, 0);
+            -webkit-box-shadow: -14px 18px 35px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -14px 18px 35px 0px rgba(0,0,0,0.75);
+            box-shadow: -14px 18px 35px 0px rgba(0,0,0,0.75);   
+        }
+    }
+
+    .about-content-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        .about-svg-container {
+            margin-top: 30px;
+            #about-svg {
+                width: 100%; // ustawienie w % umożliwia się skalowanie elementu w przypadku zmiany szerokości okna
+            }
+        }
+        .about-me-text {
+            margin-top: 30px;
+            width: 100%;
+            border-radius: 10px;
+            letter-spacing: 1px;
+            background-color: rgba(0, 0, 0, .7);
+            color: white;
+            
+            .about-text {
+                font-family: 'News Cycle', sans-serif;
+                font-weight: 600;
+                text-align: center;
+                font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300)));
+                margin: 0px;
+                padding: 25px;
+            }
+        }
+    }
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1000px) {
+    .about-svg-container {
+        width: 51%;
+    }
+  }

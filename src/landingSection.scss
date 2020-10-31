@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .landing-container {
-    height: 100vh; // ta sekcja ma być widoczna zawsze na całość wysokośći ekranu.
+    // height: 100vh; // ta sekcja ma być widoczna zawsze na całość wysokośći ekranu.
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,6 @@
         }
 
         #landing-btn:hover {
-            transform: scale(1.1);
             background-position: left;
             border: 1px solid white;
             color: white;

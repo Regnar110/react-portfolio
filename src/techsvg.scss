@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap'); // description font
+
+.tech-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .3);
+    transition: 1s ease;
+   
+    .tech { // tło tego kontenera to obrazek svg. Ustawiony metodą inline style w jsx html
+        padding: 0px;
+        width: 150px;
+        height: 150px;
+        background: no-repeat center center;
+        background-size: contain;
+        transition: 1s ease;
+    }
+
+    .tech-description {
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Share Tech', sans-serif;
+        font-size: 25px;
+        font-weight: 900;
+    }
+}
+
+.tech-container:hover {
+    background-color: rgba(255, 255, 255, .9);
+
+    .tech {
+        transform: scale(1.1);
+    }
+}
