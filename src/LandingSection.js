@@ -3,8 +3,8 @@ import './landingSection.scss';
 
 
 class LandingSection extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             componentIsMounted: false
         }
@@ -23,6 +23,7 @@ class LandingSection extends Component {
     }
 
     render() {
+        const {scrollFunction, scroll} = this.props;
         return(
             <div className='landing-container'>
                 <div className='landing-text header-hover'>
@@ -32,7 +33,7 @@ class LandingSection extends Component {
                     <h2>I'm Front-end Web Developer</h2>
                 </div>
                 <div className='landing-text'>
-                    <button id='landing-btn'>See more</button>
+                    <button id='landing-btn' onClick={()=> scrollFunction(scroll[1].target, scroll[5].duration)}>See more</button>
                 </div>
             </div>
         )

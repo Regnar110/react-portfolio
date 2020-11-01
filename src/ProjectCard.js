@@ -1,11 +1,11 @@
 import React from 'react';
 import './projectcard.scss';
 
-const ProjectCard = () => {
+const ProjectCard = ({tittle}) => {
     return (
                 <div className='card'>
                     <div className='card-header'>
-                        Portfolio
+                        {tittle}
                     </div>
                     <div className='card-content'>
                     </div>

@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import './navbar.scss';
 import github from './github.png'
 
-const NavBar = ({menuToggle}) => { // tutaj mam w propsach menu state. menu schowane = false, wysunięte = true
-   
+const NavBar = (props) => { // tutaj mam w propsach menu state. menu schowane = false, wysunięte = true
+    const {menuToggle, scrollFunction, scroll} = props;
     return(
         <Fragment>
             <nav className='navbar-container'>
@@ -19,11 +19,11 @@ const NavBar = ({menuToggle}) => { // tutaj mam w propsach menu state. menu scho
                 </div>
             </nav>
             <div className="menu-content">
-                <div className='menu-item'>Start</div>
-                <div className='menu-item'>About</div>
-                <div className='menu-item'>Technologies</div>
-                <div className='menu-item'>Projects</div>
-                <div className='menu-item'>Contact</div>
+                <div id='0' className='menu-item' onClick={() => scrollFunction(scroll[0].target, scroll[5].duration)}>Start</div> {/*na kliknięciu odpalamy funkcję, która wywołuje funkcje scroll z dwoma parametrami przekazywanymi do funkcji scroll. Parametr scroll target i duration - tak sie przekazuje parametry do funckji */}
+                <div id='1' className='menu-item' onClick={() => scrollFunction(scroll[1].target, scroll[5].duration)}>About</div>
+                <div id='2' className='menu-item' onClick={() => scrollFunction(scroll[2].target, scroll[5].duration)}>Technologies</div>
+                <div id='3' className='menu-item' onClick={() => scrollFunction(scroll[3].target, scroll[5].duration)}>Projects</div>
+                <div id='4' className='menu-item' onClick={() => scrollFunction(scroll[4].target, scroll[5].duration)}>Contact</div>
             </div>
         </Fragment>
     )

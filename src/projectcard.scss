@@ -15,25 +15,25 @@
 
             .card-header {
                 font-family: 'Russo One', sans-serif;
-                font-size: 25px;
+                font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
                 height: 15%;
                 color: white;
                 background-color: rgb(0, 0, 0);
                 letter-spacing: 3px;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-                -webkit-box-shadow: 0px 22px 18px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px 22px 18px 0px rgba(0,0,0,0.75);
-                box-shadow: 0px 22px 18px 0px rgba(0,0,0,0.75);
-                z-index: 1;
             }
 
             .card-content {
                 height: 70%;
                 background-color: white;
+                -webkit-box-shadow: inset -4px 1px 47px 5px rgba(0,0,0,0.75);
+                -moz-box-shadow: inset -4px 1px 47px 5px rgba(0,0,0,0.75);
+                box-shadow: inset -4px 1px 47px 5px rgba(0,0,0,0.75);
             }
 
             .card-footer {
@@ -50,10 +50,6 @@
                 transition: 0.4s ease;
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
-                -webkit-box-shadow: 0px -3px 18px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px -3px 18px 0px rgba(0,0,0,0.75);
-                box-shadow: 0px -3px 18px 0px rgba(0,0,0,0.75);
-                z-index: 1;
             }
 
             .card-footer:hover {
