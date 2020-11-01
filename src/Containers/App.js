@@ -1,14 +1,14 @@
 import React, {Component, Fragment} from 'react';
-import AboutSection from './AboutSection';
+import AboutSection from '../Components/AboutSection';
 import './App.scss';
-import LandingSection from './LandingSection.js';
-import NavBar from './NavBar'
-import {techObject} from './tech-object.js';
-import TechSection from './TechSection.js'
-import ProjectsSection from './ProjectsSection.js'; // tu będą zwracane projectCard komponent
-import {projects} from './projects';
-import ContactSection from './ContactSection';
-import {scrollTargetsArray} from './scrollTargetsArray';
+import LandingSection from '../Components/LandingSection.js';
+import NavBar from '../Components/NavBar'
+import {techObject} from '../tech-object.js';
+import TechSection from '../Components/TechSection.js'
+import ProjectsSection from '../Components/ProjectsSection.js'; // tu będą zwracane projectCard komponent
+import {projects} from '../projects';
+import ContactSection from '../Components/ContactSection';
+import {scrollTargetsArray} from '../scrollTargetsArray';
 
 class App extends Component {
   constructor() {
@@ -17,7 +17,7 @@ class App extends Component {
       menuStatus: false,
       technologies: techObject, // obiekty svg sekcji technologies
       scrollTo: scrollTargetsArray, // obiekt dla celów scrollowania i czasu scrolowania
-      projects: projects // obiekt dla kart projektów i dla modalu projektu
+      projects: projects, // obiekt dla kart projektów i dla modalu projektu
     }
   }
   
@@ -42,7 +42,6 @@ class App extends Component {
     let target = document.querySelector(scrollTarget); // target staje się parametrem przekazanych z komponentu navbar przy wywoływaniu funkcji
     let targetPosition = target.getBoundingClientRect().top - 60;
     let startPosition = window.pageYOffset;
-    let distance = targetPosition - startPosition;
     let startTime = null;
     const animationScroll = (currentTime) => {
       if(startTime === null) startTime = currentTime;

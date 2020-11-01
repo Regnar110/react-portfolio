@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './navbar.scss';
-import github from './github.png'
+import github from '../github.png'
 
 const NavBar = (props) => { // tutaj mam w propsach menu state. menu schowane = false, wysunięte = true
     const {menuToggle, scrollFunction, scroll} = props;
@@ -8,7 +8,7 @@ const NavBar = (props) => { // tutaj mam w propsach menu state. menu schowane = 
         <Fragment>
             <nav className='navbar-container'>
                 <div className='github-button-container'>
-                    <img id='github-menu-image' src={github} alt=''/>
+                    <a href='https://github.com/Regnar110'><img id='github-menu-image' src={github} alt=''/></a>
                     <span id='image-text'>My GitHub</span>
                 </div>
                 <div className='menu'>

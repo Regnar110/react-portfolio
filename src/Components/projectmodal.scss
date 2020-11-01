@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap'); //modal header
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap'); // techs
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); // button
+
+.display-block { // gdy modal jest włączony
+    display: block;
+}
+  
+.display-none { // klasa któa chowa modal
+    display: none;
+}
+
+.modal { // modal pokrywa całe okno - jest to czarne tło modalu
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    .modal-main {
+        overflow: hidden;
+        position:fixed;
+        width: 70%;
+        height: auto;
+        top:55%;
+        left:50%;
+        transform: translate(-50%,-50%); // centrowanie modalu
+        background-color: rgba(0, 0, 0, .8);
+        border-radius: 10px;
+        text-align: center;
+
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            color: white;
+            height: 400px; //chwilowo
+
+            .modal-header {
+                font-family: 'Cairo', sans-serif;
+                letter-spacing: 3px;
+                font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+                margin: 0px;
+            }
+
+            .tech-used {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .tech{
+                    color: white;
+                    font-size: 15px;
+                    font-family: 'Play', sans-serif;
+                    padding: 3px;
+                    margin: 5px;
+                    border: 1px solid white;
+                    border-radius: 3px;
+                }
+            }
+
+            .content-description {
+                font-family: 'Roboto', sans-serif;
+                // word-break:break-all; // wymsza wrapowanie się słów w kontenerze
+                width: 80%;
+                font-size: calc(11px + (20 - 11) * ((100vw - 300px) / (1600 - 300)));
+                margin-top: 20px;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+            }
+
+            .visit {
+                display: flex;
+                .link-buttons {
+                    color: black;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: calc(7px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
+                    letter-spacing: 3px;
+                    background: rgb(255, 255, 255);
+                    padding: 5px;
+                    font-weight: 900;
+                    border: none;
+                    border-radius: 5px;
+                    transition: 0.5s ease;
+                    margin: 10px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+
+                .link-buttons:hover {
+                    transform: scale(1.1);
+                }
+
+                .link-buttons:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+        
+        .modal-button {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 3px;
+            background: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 50%);
+            background-size: 200% 104%;
+            background-position:left;
+            padding: 7px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: 0.5s ease;
+            border: 1px solid white;
+        }
+
+        .modal-button:hover {
+            background-position: right;
+            color: black;
+            transform: scale(1.05);
+        }
+    }
+}
+  
+  

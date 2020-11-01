@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.scss';
-import about from './about.svg';
+import about from '../about.svg';
 
 const AboutSection = () => {
     

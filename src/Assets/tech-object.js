@@ -1,12 +1,12 @@
-import react from './react.svg';
-import bootstrap from './bootstrap.svg'
-import css from './css.svg'
-import git from './git.svg'
-import github from './github.svg'
-import html5 from './html5.svg'
-import js from './js.svg'
-import npm from './npm.svg'
-import sass from './sass.svg'
+import react from './technologies-svg/react.svg';
+import bootstrap from './technologies-svg/bootstrap.svg'
+import css from './technologies-svg/css.svg'
+import git from './technologies-svg/git.svg'
+import github from './technologies-svg/github.svg'
+import html5 from './technologies-svg/html5.svg'
+import js from './technologies-svg/js.svg'
+import npm from './technologies-svg/npm.svg'
+import sass from './technologies-svg/sass.svg'
 
 export const techObject = [
     {
