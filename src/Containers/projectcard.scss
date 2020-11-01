@@ -31,6 +31,8 @@
             .card-content {
                 height: 70%;
                 background-color: white;
+                background: center center no-repeat;
+                background-size: contain;
                 -webkit-box-shadow: inset -4px 1px 47px 5px rgba(0,0,0,0.75);
                 -moz-box-shadow: inset -4px 1px 47px 5px rgba(0,0,0,0.75);
                 box-shadow: inset -4px 1px 47px 5px rgba(0,0,0,0.75);

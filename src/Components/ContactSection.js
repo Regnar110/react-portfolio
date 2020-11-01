@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.scss';
-import mailme from './mailme.svg';
+import mailme from '../mailme.svg';
 
 const ContactSection = () => {
     return (

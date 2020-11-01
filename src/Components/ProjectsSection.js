@@ -1,8 +1,10 @@
 import React from 'react';
 import './projectsection.scss';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../Containers/ProjectCard';
+import ProjectModal from './ProjectModal';
 
-const ProjectsSection = ({projects}) => {
+const ProjectsSection = (props) => {
+    const {projects} = props;
     return (
         <div className='project-section-container'>
             <div className='section-header'>
@@ -14,7 +16,9 @@ const ProjectsSection = ({projects}) => {
                 {
                     projects.map(element => {
                         return(
-                            <ProjectCard tittle={element.project[0]}/>
+                            <ProjectCard tittle={element.project[0]} techs={element.project[1]} desc={element.project[2]} visit={element.project[3]} code={element.project[4]} cardimage={element.project[5]}>
+                                <ProjectModal/>
+                            </ProjectCard>
                         )
                     })
                 }
