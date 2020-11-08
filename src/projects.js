@@ -8,7 +8,8 @@
 //]
 import portfolio from './portfolio.png';
 import robofriends from './robofriends.png';
-import todomanager from './todomanager.png'
+import todomanager from './todomanager.png';
+import tictactoe from './tictactoe.png';
 
 export const projects = [
     {
@@ -48,5 +49,19 @@ export const projects = [
             ,'https://github.com/Regnar110/robofriends-app'
             , robofriends
         ]
+    },
+
+    {
+        project: [
+            'Tic-Tac-Toe-Game',
+            [
+                'react', 'JavaScript', 'sass', 'html', 'npm' 
+            ],
+            'This is a simple tic-tac-toe game. The game was created with react.js. A "winning algorithm" has been built into the game, which determines which player wins the game. The game also has a simple console that indicates the players current move, and a logical structure created to prevent unwanted actions. The entire structure of the application is based on manipulating the state of the application.'
+            ,'https://mw-tictactoe.netlify.app'
+            ,'https://github.com/Regnar110/react-tictactoe'
+            , tictactoe
+        ]
     }
+
 ]
