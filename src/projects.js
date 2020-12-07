@@ -10,6 +10,7 @@ import portfolio from './portfolio.png';
 import robofriends from './robofriends.png';
 import todomanager from './todomanager.png';
 import tictactoe from './tictactoe.png';
+import starwarsthing from './starwarsthing.png'
 
 export const projects = [
     {
@@ -61,6 +62,18 @@ export const projects = [
             ,'https://mw-tictactoe.netlify.app'
             ,'https://github.com/Regnar110/react-tictactoe'
             , tictactoe
+        ]
+    },
+    {
+        project: [
+            'Star Wars database',
+            [
+                'react', 'JavaScript', 'AJAX', 'sass', 'html', 'npm', 'API'
+            ],
+            'An application that, using AJAX and API, downloads and processes data in a specific way, which will then be used to render components and their content for the application. The data used to create the application were imported from SWAPI applications and APIs created by GitHub users.',
+            'https://starwarsthing.netlify.app',
+            'https://github.com/Regnar110/react-sw-movies',
+            starwarsthing
         ]
     }
 
