@@ -11,6 +11,7 @@ import robofriends from './robofriends.png';
 import todomanager from './todomanager.png';
 import tictactoe from './tictactoe.png';
 import starwarsthing from './starwarsthing.png'
+import faceapp from './faceapp.png'
 
 export const projects = [
     {
@@ -54,7 +55,7 @@ export const projects = [
 
     {
         project: [
-            'Tic-Tac-Toe-Game',
+            'Tic-Tac-Toe',
             [
                 'react', 'JavaScript', 'sass', 'html', 'npm' 
             ],
@@ -74,6 +75,18 @@ export const projects = [
             'https://starwarsthing.netlify.app',
             'https://github.com/Regnar110/react-sw-movies',
             starwarsthing
+        ]
+    },
+    {
+        project: [
+            'Face recognition',
+            [
+                'React', 'JavaScript', 'AJAX', 'sass', 'npm', 'API', 'Node', 'Exporess', 'Knex', 'Bcrypt', 'PostgresSQL', 'Postman', 'Tachyons', 'Heroku'
+            ],
+            `Application that detects faces in photos. You can log in using the email: guest@gmail.com, password: 123456789 or create a new account.always with . Test this app with any photo URL which have jpeg, jpg, png or other photo file extension in query`,
+            'https://mw-face-reco.netlify.app',
+            'https://github.com/Regnar110/faceApp',
+            faceapp
         ]
     }
 

@@ -52,7 +52,7 @@
                 flex-wrap: wrap;
                 .tech{
                     color: white;
-                    font-size: 15px;
+                    font-size: calc(11px + (15 - 11) * ((100vw - 280px) / (1600 - 280)));
                     font-family: 'Play', sans-serif;
                     padding: 3px;
                     margin: 5px;
